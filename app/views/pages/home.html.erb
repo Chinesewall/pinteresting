@@ -2,10 +2,17 @@
 	<h1>Welcome to Negotishake</h1>
 	<h2>Connect with a growing online community of salary information</h2>
 	<br></br>
-	<h4>Sign up is free.</h4>
 	
-	<p>
-		<%= link_to "Log in","#", class: "btn btn-primary btn-lg" %>
-	    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-	</p>
+	
+	<% if user_signed_in? %>
+        <br></br> 	
+        Welcome to the members area. 
+	<% else %>
+	    <h4>Sign up is free.</h4>
+		<p>
+			<%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %>
+		    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+		</p>
+	<% end %>
+
 </div>
