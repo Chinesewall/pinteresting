@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
   devise_for :views
+
+  #this is the default when users go to www.negotishake.com
   root 'pages#home'
-  get "about" => "pages#about"
+
+  #define routes
+  get "about"   => "pages#about"
+  get "search"  => "pages#search"
+  get "myinfo"  => "pages#myinfo"
   
 
   # The priority is based upon order of creation: first created -> highest priority.
