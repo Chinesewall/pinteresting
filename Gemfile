@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+#2014.09.25
+#Previous ruby version from one month rails was ruby '2.0.0' this may be the version pushed on github
+#ruby '2.0.0' check if this is ok. 
+ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
@@ -20,10 +23,16 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
+
+
+# other one month rails gem sets. 
+#bootstrap gemset
 gem 'bootstrap-sass'
+#devise gemset
 gem 'devise', '~> 3.1.0.rc2'
 
 
+#Database
 group :development, :test do 
 	gem 'sqlite3'
 end
@@ -50,5 +59,3 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-
-
