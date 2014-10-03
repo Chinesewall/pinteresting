@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
-#2014.09.25
+#2014.09.25e
 #Previous ruby version from one month rails was ruby '2.0.0' this may be the version pushed on github
 #ruby '2.0.0' check if this is ok. 
 ruby '2.1.3'
+
+gem 'paperclip', '~> 3.0'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
