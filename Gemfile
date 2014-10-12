@@ -6,7 +6,7 @@ ruby '2.1.3'
 #GEMS#################################################################### 
 
 #jquery & masonry gems
-gem 'jquery-turbolinks'
+# gem 'jquery-turbolinks'
 
 #uninstall masonry rails --- no internet europe 10.10.2014, put back later
 gem 'masonry-rails', '~> 0.2.0'
