@@ -13,6 +13,8 @@
   </thead>
 
   <tbody>
+
+  <div id="pins">
     <% @pins.each do |pin| %>
       <tr>
         <td><%= image_tag pin.image.url(:medium) %></td>
@@ -25,6 +27,9 @@
         <% end %>
       </tr>
     <% end %>
+  </div>
+
+
   </tbody>
 </table>
 
