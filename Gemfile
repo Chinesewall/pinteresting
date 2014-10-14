@@ -3,16 +3,22 @@ source 'https://rubygems.org'
 #ruby '2.0.0' check if this is ok. 
 ruby '2.1.3'
 
-#GEMS#################################################################### 
+#IMAGE GEMS #################################################################### 
 
 #jquery & masonry gems
-# gem 'jquery-turbolinks'
+#gem 'jquery-turbolinks'
 
 #uninstall masonry rails --- no internet europe 10.10.2014, put back later
 gem 'masonry-rails', '~> 0.2.0'
 
 #paper clip and imageklip gem  
 gem 'paperclip', '~> 3.0'
+
+#amazon aws gem - amazon web services.
+gem 'aws-sdk', '~> 1.20.0'
+
+
+#STANDARD RAILS GEMS######################################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
@@ -35,7 +41,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 
 
-# other one month rails gem sets. 
+##################################################### other one month rails gem sets. 
 #bootstrap gemset
 gem 'bootstrap-sass'
 #devise gemset
@@ -51,7 +57,6 @@ group :production do
     gem 'pg'
     gem 'rails_12factor'
 end 
-
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
