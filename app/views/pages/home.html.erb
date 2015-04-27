@@ -1,11 +1,9 @@
-	<div class="jumbotron center">
-	
+	<div class="jumbotron center">	
 		<% if user_signed_in? %>
 	        <h2>Welcome to the Members Area - You are logged in.</h2>
 		<% else %>
-		    <h1>Welcome to Negotishake</h1>
 			<p>Connect with a growing online community of salary and human resources informaiton</p>
-			<br></br>
+			<br>
 		    <h5>Sign up is always free.</h5>
 			<p>
 				<%= link_to "Log in", new_user_session_path, class: "btn btn-primary btn-lg" %>
